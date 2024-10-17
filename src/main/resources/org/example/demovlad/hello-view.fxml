@@ -16,7 +16,7 @@
    <children>
       <HBox prefHeight="82.0" prefWidth="660.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#new_Alert" text="Button">
+            <Button mnemonicParsing="false" onAction="#new_Alert" text="редагувати">
                <HBox.margin>
                   <Insets bottom="33.0" left="33.0" right="33.0" top="33.0" />
                </HBox.margin>
@@ -26,7 +26,7 @@
                   <Insets bottom="33.0" left="33.0" right="33.0" top="33.0" />
                </HBox.margin>
             </Button>
-            <Button mnemonicParsing="false" onAction="#new_Alert2" text="Button">
+            <Button mnemonicParsing="false" onAction="#new_Alert2" text="видалити">
                <HBox.margin>
                   <Insets bottom="33.0" left="33.0" right="33.0" top="33.0" />
                </HBox.margin>

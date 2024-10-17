@@ -1,0 +1,109 @@
+/* Загальні стилі для всієї програми */
+.root {
+    -fx-background-color: #f0f4f8; /* Світло-блакитний фон */
+    -fx-padding: 20px;
+    -fx-font-family: 'Segoe UI', sans-serif;
+}
+
+/* Стиль для кнопок */
+.button {
+    -fx-background-color: linear-gradient(to bottom, #4CAF50, #388E3C); /* Градієнт від зеленого до темно-зеленого */
+    -fx-text-fill: white; /* Білий текст */
+    -fx-padding: 10px 20px;
+    -fx-border-color: transparent;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.15), 5, 0, 0, 2);
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom, #66BB6A, #43A047); /* Світліший зелений градієнт при наведенні */
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom, #388E3C, #2E7D32); /* Темний зелений при натисканні */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.3), 3, 0, 0, 1);
+}
+
+/* Стиль для панелі управління */
+.toolbar {
+    -fx-background-color: #ffffff; /* Білий фон панелі */
+    -fx-border-color: #dcdcdc;
+    -fx-border-width: 1px;
+    -fx-padding: 10px;
+    -fx-spacing: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.1), 4, 0, 0, 2);
+    -fx-background-radius: 5px;
+}
+
+/* Стиль для текстового поля */
+.text-field {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #bfbfbf;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-border-radius: 3px;
+    -fx-background-radius: 3px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.05), 3, 0, 0, 1);
+}
+
+.text-field:focused {
+    -fx-border-color: #2196F3; /* Синя рамка при фокусі */
+    -fx-effect: dropshadow(three-pass-box, rgba(33, 150, 243, 0.3), 3, 0, 0, 1);
+}
+
+/* Стиль для таблиці */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.05), 5, 0, 0, 2);
+}
+
+.table-column {
+    -fx-alignment: CENTER-LEFT;
+    -fx-background-color: #f1f3f5;
+    -fx-border-color: #dcdcdc;
+    -fx-padding: 10px;
+    -fx-border-radius: 5px 5px 0 0;
+}
+
+.table-cell {
+    -fx-alignment: CENTER-LEFT;
+    -fx-padding: 10px;
+}
+
+/* Стиль для порожньої таблиці */
+.table-view .placeholder {
+    -fx-background-color: transparent;
+    -fx-text-fill: #888888;
+}
+
+/* Додатковий стиль для заголовків таблиці */
+.table-view .column-header {
+    -fx-background-color: linear-gradient(to bottom, #2196F3, #1976D2); /* Синій градієнт */
+    -fx-text-fill: white;
+    -fx-padding: 8px;
+    -fx-border-radius: 5px 5px 0 0;
+}
+
+/* Стиль для кнопки з червоним кольором, наприклад, видалення */
+.button-danger {
+    -fx-background-color: linear-gradient(to bottom, #F44336, #D32F2F); /* Градієнт від червоного до темно-червоного */
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.button-danger:hover {
+    -fx-background-color: linear-gradient(to bottom, #E57373, #C62828); /* Світліший червоний при наведенні */
+}
+
+.button-danger:pressed {
+    -fx-background-color: linear-gradient(to bottom, #D32F2F, #B71C1C); /* Темний червоний при натисканні */
+}
+

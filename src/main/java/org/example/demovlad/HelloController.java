@@ -23,11 +23,12 @@ public class HelloController {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloController.class.getResource("ed.fxml"));
         try {
             Stage stage = new Stage();
-            Scene scene = new Scene(fxmlLoader.load(), 640, 480);
+            Scene scene = new Scene(fxmlLoader.load(), 500, 500);
             stage.setScene(scene);
+            scene.getStylesheets().add(HelloApplication.class.getResource("my.css").toExternalForm());
 
-            stage.setMaxHeight(300);
-            stage.setMaxWidth(300);
+            stage.setMinHeight(300);
+            stage.setMinWidth(350);
             stage.setTitle("Hello!");
             stage.initModality(Modality.WINDOW_MODAL);
             stage.initOwner(tet.getScene().getWindow());
